@@ -1,0 +1,56 @@
+title: NAFET
+email: info@nafet.org.mz
+description: >- # this means to ignore newlines until "baseurl:"
+  Núcleo das Associações femininas de Tete
+url: "https://nafet.org.mz"
+author: Ivo Zinenda
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-analytics
+  - jekyll-paginate-v2
+
+# Collections
+collections_dir: collections
+collections:
+  slider:
+  sobre:
+  perfil:
+  objectivos:
+  galeria:
+  parceiros:
+  realizacoes:
+  dbancarios:
+
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+image: /assets/img/logotipoNAFET.svg
+color: "#774582"
+
+pagination:
+  enabled: true
+  per_page: 20
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

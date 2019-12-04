@@ -1,0 +1,14 @@
+<section id="doar" class="modal">
+    <div class="container modal-content">
+        <h6 class="primary-color-text bolder">Gostaria de Apoiar-nos?</h6>
+
+        {% for item in site.dbancarios %}
+                    
+            <p><strong>Banco:</strong> <em>{{ item.title }}</em></p>
+            <p><strong>Conta:</strong> <em>{{ item.number }}</em></p>
+            <p><strong>NIB:</strong> <em>{{ item.nib }}</em></p>
+            <p><strong>NIF:</strong> <em>{{ item.nif }}</em></p>            
+                    
+        {% endfor %}
+    </div>
+</section>

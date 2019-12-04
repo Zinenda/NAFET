@@ -1,0 +1,13 @@
+<section id="parceiros" class="section scrollspy">
+    <h5 class="center primary-color-text bolder">Parceiros</h5>
+
+    <div class="container">
+        <div class="slick-clientes">
+            {% for item in site.parceiros.first.parceiro %}
+                <div>
+                    <img src="{{ item.image }}?nf_resize=fit&w=80" alt="{{ item.company }}" style="width: 80px">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

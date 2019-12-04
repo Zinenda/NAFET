@@ -1,0 +1,9 @@
+<div class="slider">
+    <ul class="slides">
+        {% for item in site.slider.first.slide limit: 4 %}
+            <li>
+                <img src="{{ item.image }}" alt="{{ item.title }}">
+            </li>
+        {% endfor %}
+    </ul>
+</div>

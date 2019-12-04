@@ -1,0 +1,50 @@
+/* 1. Colors
+   ========================================================================== */
+
+$primary-color: #774582 !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+$secondary-color: #301736 !default;
+$link-color: #C182CF !default;
+
+/* 4. Cards
+   ========================================================================== */
+
+$card-padding: 20px !default;
+$card-bg-color: #fff !default;
+$card-link-color: #B5AD4E !default;
+$card-link-color-light: lighten($card-link-color, 20%) !default;
+
+
+/* 13. Navigation Bar
+   ========================================================================== */
+
+$navbar-height: 80px !default;
+$navbar-height-mobile: 54px !default;
+$navbar-font-color: #fff !default;
+$navbar-brand-font-size: 2.1rem !default;
+
+
+/* 14. Side Navigation
+   ========================================================================== */
+
+$sidenav-font-color: $primary-color !default;
+$sidenav-bg-color: #fff !default;
+$sidenav-padding-right: 30px !default;
+$sidenav-item-height: 64px !default;
+
+$slider-indicator-color: $primary-color !default;
+
+/* 24. Progress Bar
+   ========================================================================== */
+
+$progress-bar-color: $secondary-color !default;
+
+/* 21. Footer
+   ========================================================================== */
+
+$footer-bg-color: $primary-color !default;
+
+// Text Inputs + Textarea
+$input-height: 3rem !default;
+$input-border-color: $primary-color !default;

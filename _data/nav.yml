@@ -1,0 +1,27 @@
+- title: Sobre
+  url: "#sobre"
+
+- title: Objectivos
+  url: "#objectivos"
+
+- title: Projectos
+  url: "#projectos"
+
+- title: Realizações
+  url: realizacoes/
+
+- title: Histórias de Sucesso
+  url: sucessos/
+
+- title: Parceiros
+  url: "#parceiros"
+
+- title: Contactos
+  url: "#contactos"
+  modal: true
+
+- title: Notícias
+  url: noticias/
+
+- title: Galeria
+  url: galeria/

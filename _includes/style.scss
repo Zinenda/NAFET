@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import
+    "base",
+    "animate-bottom",
+    "materialize",
+    "page-header",
+    "mygrid"
+;
+
+.btn {
+    border-radius: 20px;
+}
+
+strong,
+.bold {
+    font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
+}

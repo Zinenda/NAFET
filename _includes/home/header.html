@@ -1,0 +1,38 @@
+<header class="hero-header">
+    <div class="hero-content center">
+        <div class="card-panel white-text" style="background: rgba(119, 69, 130, 0.5);">
+            <div class="container">
+                <h1 class="bolder hide-on-med-and-down">{% if page.title %}{{ page.title }} {% else %} {{ site.title }} {% endif %}</h1>
+                <h4 class="bolder hide-on-large-only">{% if page.title %}{{ page.title }} {% else %} {{ site.title }} {% endif %}</h4>
+                
+                <h4 class="bold hide-on-med-and-down">{% if page.description %}{{ page.description }} {% else %} {{ site.description }} {% endif %}</h4>
+                <p class="bold hide-on-large-only">{% if page.description %}{{ page.description }} {% else %} {{ site.description }} {% endif %}</p>
+
+                <div class="hide-on-med-and-down">
+                    <div class="divider"></div>
+
+                    {% for item in site.sobre limit: 1 %}
+                        <article class="light">
+                            {{ item.content | truncatewords: 20 }}
+                        </article>
+                    {% endfor %}
+                </div>
+                <a href="#SobreModal" class="btn white primary-color-text waves-effect waves-primary modal-trigger hide-on-med-and-down" style="color: {{ site.color }}">Saiba Mais</a>
+
+                <a href="#SobreModal" class="btn-small white primary-color-text waves-effect waves-primary modal-trigger hide-on-large-only" style="color: {{ site.color }}">Saiba Mais</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="SobreModal" class="modal">
+    <div class="container modal-content">
+        {% for item in site.sobre limit: 1 %}
+            <h5 class="bolder underline primary-color-text center-align">{{ item.title }}</h5>
+
+            <article class="text-justified light">
+                {{ item.content }}
+            </article>
+        {% endfor %}
+    </div>
+</div>

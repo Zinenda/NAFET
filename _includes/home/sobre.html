@@ -1,21 +1,27 @@
-{% for item in site.sobre limit: 1 %}
-    <div id="QuemSomos" class="modal">
-        <div class="container modal-content">
-            <p class="bolder primary-color-text">{{ item.title }}</p>
+<section id="sobre" class="section scrollspy">
+    <div class="container">
+        <article class="section-grid">
+            {% for item in site.sobre offset: 1 %}
+                <div class="card-panel primary-color-text hoverable">
+                    <p class="bolder">{{ item.title }}</p>
 
-            <div class="light text-justified grey-text text-darken-4">
-                {{ item.content }}
-            </div>
-        </div>
+                    <article class="text-justified light">
+                        {{ item.content | truncatewords: 20 }}
+                    </article>
+
+                    <a href="#ModalSobre-{{ item.title }}" class="btn-flat waves-effect waves-light modal-trigger" style="border: solid 1px {{ site.color }}; color: {{ site.color }};">Saiba Mais</a>
+                </div>
+            {% endfor %}
+        </article>
     </div>
-{% endfor %}
+</section>
 
-{% for item in site.sobre %}
-    <div id="Sobre-{{ item.title }}" class="modal">
+{% for item in site.sobre offset: 1 %}
+    <div id="ModalSobre-{{ item.title }}" class="modal primary-color-text">
         <div class="container modal-content">
-            <p class="bolder primary-color-text">{{ item.title }}</p>
+            <p class="bolder">{{ item.title }}</p>
 
-            <div class="light text-justified grey-text text-darken-4">
+            <div class="light text-justified">
                 {{ item.content }}
             </div>
         </div>

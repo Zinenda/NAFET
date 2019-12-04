@@ -1,5 +1,5 @@
 <header class="hero-header">
-    <div class="hero-content center">
+    <div class="hero-content center-on-small-only">
         <div class="card-panel white-text" style="background: rgba(119, 69, 130, 0.5);">
             <div class="container">
                 <h1 class="bolder hide-on-med-and-down">{% if page.title %}{{ page.title }} {% else %} {{ site.title }} {% endif %}</h1>
@@ -17,9 +17,11 @@
                         </article>
                     {% endfor %}
                 </div>
-                <a href="#SobreModal" class="btn white primary-color-text waves-effect waves-primary modal-trigger hide-on-med-and-down" style="color: {{ site.color }}">Saiba Mais</a>
+                <div class="center">
+                    <a href="#SobreModal" class="btn white primary-color-text waves-effect waves-primary modal-trigger hide-on-med-and-down" style="color: {{ site.color }}">Saiba Mais</a>
 
-                <a href="#SobreModal" class="btn-small white primary-color-text waves-effect waves-primary modal-trigger hide-on-large-only" style="color: {{ site.color }}">Saiba Mais</a>
+                    <a href="#SobreModal" class="btn-small white primary-color-text waves-effect waves-primary modal-trigger hide-on-large-only" style="color: {{ site.color }}">Saiba Mais</a>
+                </div>
             </div>
         </div>
     </div>
@@ -28,7 +30,7 @@
 <div id="SobreModal" class="modal">
     <div class="container modal-content">
         {% for item in site.sobre limit: 1 %}
-            <h5 class="bolder underline primary-color-text center-align">{{ item.title }}</h5>
+            <h5 class="bolder primary-color-text center-align">{{ item.title }}</h5>
 
             <article class="text-justified light">
                 {{ item.content }}

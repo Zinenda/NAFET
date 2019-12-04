@@ -20,3 +20,16 @@ strong,
 .bolder {
     font-weight: bolder;
 }
+
+nav {
+    background-color: #fff;
+
+    .nav-wrapper {
+        a.brand-logo {
+            svg {
+                height: 60px;
+                padding: 10px;
+            }
+        }
+    }
+}

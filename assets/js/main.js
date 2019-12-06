@@ -5,10 +5,13 @@ $(document).ready(function(){
 	$('.collapsible').collapsible();
 	$('.modal').modal();
 	$('.parallax').parallax();
-	$('.slider').slider({
-		height: 600
-	});
 	$('.scrollspy').scrollSpy();
+
+	$('.slick-single-item').slick({
+		dots: true,
+		lazyLoad: 'ondemand',
+		infinite: false
+	});
 
 	$('.slick-responsive').slick({
 	dots: true,
